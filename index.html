@@ -28,7 +28,24 @@
 					</div>
 				</div>
 			</header>
-			<main></main>
+			<main>
+				<div class="container">
+					<div class="row">
+						<div v-for="disco in dischi" class="col-4 p-5">
+							<div class="my-card p-4 pt-5">
+								<div class="d-flex justify-content-center">
+									<img class="w-75" :src="disco.poster" alt="" />
+								</div>
+								<div class="text-white text-center mt-5">
+									<h5 class="">{{disco.title}}</h5>
+									<p>{{disco.author}}</p>
+									<p class="fw-bold">{{disco.year}}</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
 		</div>
 		<script src="./script.js"></script>
 	</body>
