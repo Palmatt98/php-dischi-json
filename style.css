@@ -15,3 +15,6 @@ main {
 .my-card{
 	background-color: #112030;
 }
+.icon {
+	cursor: pointer;
+}
